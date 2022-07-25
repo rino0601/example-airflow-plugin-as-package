@@ -5,10 +5,10 @@ description = ""
 authors = ["HanJong Ko <rino0601.dev@gmail.com>"]
 
 [tool.poetry.plugins."airflow.plugins"]
-foo = 'airsflow.plugin_entry:Plugin'
+foo = 'example_airflow_plugin_as_package.plugin_entry:Plugin'
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "~=3.7"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
