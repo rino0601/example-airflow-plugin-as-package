@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "example-airflow-plugin-as-package"
+version = "0.1.0"
+description = ""
+authors = ["HanJong Ko <rino0601.dev@gmail.com>"]
+
+[tool.poetry.plugins."airflow.plugins"]
+foo = 'airsflow.plugin_entry:Plugin'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+apache-airflow = "^2.3.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
